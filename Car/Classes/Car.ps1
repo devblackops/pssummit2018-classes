@@ -1,3 +1,4 @@
+
 class Car {
     [string]$Manufacturer
     [string]$Model

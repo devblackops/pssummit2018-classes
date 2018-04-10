@@ -1,7 +1,7 @@
 
 # No variables here. Only  literal paths!
 #using module '/Users/bolin/OneDrive/Decks/PDX_PSUG_2018-02-21\Car'
-using module ..\Car
+#using module Car
 
 class Tesla : Car {
     [int]$MaxSpeed = 250

@@ -1,11 +1,5 @@
 # Load class
-. $PSScriptRoot/Classes/Car.ps1
-
-# class Car {
-#     [string]$Manufacturer
-#     [string]$Model
-#     [int]$Year
-# }
+# $PSScriptRoot/Classes/Car.ps1
 
 function New-Car {
     [cmdletbinding()]

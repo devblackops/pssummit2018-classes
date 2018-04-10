@@ -8,5 +8,5 @@ New-Planet
 [earth]::new() #nope
 
 # restart session
-#using module ./bin/0.1.0/ComplexModule.psd1
+using module ./bin/0.1.0/ComplexModule.psd1
 [earth]::new()

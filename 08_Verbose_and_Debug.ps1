@@ -1,7 +1,9 @@
+<#
+Scenario: Verbose and debug messages
 
-# Scenario: Verbose and debug messages
-# Verbose and Debug messages work but you must wrap your usage of the class
-# in an advanced function/cmdlet or use preference variables
+Verbose and Debug messages work but you must wrap your usage of the class
+in an advanced function/cmdlet or use preference variables
+#> 
 
 # via @JohnLBevan https://stackoverflow.com/questions/39413401/powershell-5-class-write-debug-or-write-verbose-output-in-constructor-or-method
 class DemoClass {
@@ -35,14 +37,20 @@ function Invoke-AdvancedFunction {
     $myDemo.GetMyName()
 }
 
-# This also works with VerbosePreference/DebugPreference
+Invoke-NormalFunction -Name Brandon
+
+Invoke-AdvancedFunction -Name Brandon -Verbose
+Invoke-AdvancedFunction -Name Brandon -Debug
+
+# This also works with $VerbosePreference
 $VerbosePreference = 'SilentlyContinue'
 $d = [DemoClass]::new('brandon')
 
 $VerbosePreference = 'Continue'
 $d = [DemoClass]::new('brandon')
 
-$DebugPreference = 'Continue'
+# But not DebugPreference?
+$DebugPreference = 'Inquire'
 $d = [DemoClass]::new('brandon')
 
 $VerbosePreference = 'SilentlyContinue'

@@ -6,7 +6,7 @@ properties {
     $outPsm1 = "$outputPath/ComplexModule.psm1"
 }
 
-task default -depends build
+task default -depends Build
 
 task Clean {
     if (Test-Path -LiteralPath $outputPath) {

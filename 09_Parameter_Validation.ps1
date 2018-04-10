@@ -17,4 +17,10 @@ class MyClass {
 }
 
 $x = [MyClass]::new()
+
 $x.MyMethod('Brandon')
+$x.MyMethod('br')
+
+
+# This works because PS casts the integer to a string but should it?
+$x.MyMethod(4233)

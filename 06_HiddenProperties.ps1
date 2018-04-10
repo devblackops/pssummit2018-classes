@@ -1,5 +1,6 @@
-
-# Dragon: no 'private' properties, only 'hidden', but not very well
+<#
+Scenario: You want to "hide" properties from consuming script
+#>
 
 class Foo {
     [string]$Name = 'bar'
@@ -12,3 +13,14 @@ $f | Get-Member -Force
 $f.Secret
 $f.Secret = '12345'
 $f.Secret
+
+
+
+
+
+
+
+
+<#
+Dragon: no 'private' properties, only 'hidden', but not very well
+#>
