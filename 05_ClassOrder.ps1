@@ -2,14 +2,13 @@
 Scenario: Loading classes in order
 #>
 
-class Car {
-    [string]$Model = 'Corolla'
-}
-
 class Tesla : Car {
     [string]$Model = 'Roadster'
 }
 
+class Car {
+    [string]$Model = 'Corolla'
+}
 
 [Car]::new()
 [Tesla]::new()
