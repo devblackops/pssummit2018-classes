@@ -1,5 +1,5 @@
 # Load class
-# $PSScriptRoot/Classes/Car.ps1
+# . $PSScriptRoot/Classes/Car.ps1
 
 function New-Car {
     [cmdletbinding()]
